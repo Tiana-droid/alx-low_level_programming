@@ -3,16 +3,16 @@
 /**
  * main - entry point
  * Description: prints the size of various data types on the computer it is compiled and run on
+ *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	printf("size of a char: %d byte(s)\n", (int) sizeof(char));
-	printf("size of a int: %d byte(s)\n", (int) sizeof(int));
-	printf("size of a long int: %d byte(s)\n", (int) sizeof(long int));
-       	printf("size of a long long int: %d byte(s)\n", (int) sizeof(long long int));
-	 printf("size of a float: %d byte(s)\n", (int) sizeof(float));
-
-	 return (0);
+	printf("Size of a char: %d byte(s)\n", (int) sizeof(char));
+	printf("Size of a int: %d byte(s)\n", (int) sizeof(int));
+	printf("Size of a long int: %d byte(s)\n", (int) sizeof(long int));
+       	printf("Size of a long long int: %d byte(s)\n", (int) sizeof(long long int));
+	printf("Size of a float: %d byte(s)\n", (int) sizeof(float));
+	return (0);
 }
