@@ -3,7 +3,7 @@
 /**
  * main - func that prints all alphabets
  *
- * return: always 0 (success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
