@@ -9,7 +9,8 @@
 
 int main(void)
 {
-	int i, j;
+	int i;
+	int j;
 
 	i = 97;
 	j = 65;
