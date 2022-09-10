@@ -4,7 +4,7 @@
  * main - entry point
  *
  * Description: To print out alphabets in lower case and upper case
- * Return : Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
