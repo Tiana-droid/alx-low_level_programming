@@ -9,7 +9,6 @@
 int main(void)
 {
 	int i, j;
-	
 	i = 48;
 	j = 48;
 
@@ -33,7 +32,6 @@ int main(void)
 
 		i++;
 	}
-	
 	putchar(10);
 
 	return (0);
