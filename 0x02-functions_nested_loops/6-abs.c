@@ -9,7 +9,7 @@
  * Return: Always 0 (Success)
  */
 
-int int_abs(int)
+int int_abs(int c)
 {
 	if (c > 0 || c == 0)
 	{
@@ -17,4 +17,4 @@ int int_abs(int)
 	}
 	else
 	return (c * -1);
-}	
+}
