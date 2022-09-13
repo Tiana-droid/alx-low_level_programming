@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - check the code
@@ -9,18 +9,12 @@
 
 void print_alphabet(void)
 {
-	int i = 97;
+	char c = 97;
 
-	while (i < 123)
+	while (c < 123)
 	{
-		putchar(i);
+		_putchar(c);
 		i++;
 	}
-	putchar(10);
-}
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
+	_putchar(10);
 }
