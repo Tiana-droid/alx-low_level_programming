@@ -16,26 +16,30 @@ void print_times_table(int n)
 	{
 		for (row = 0; row <= n; row++)
 		{
-			_putchar('0');
-
-			for (column = 0; column <= n; column++)
+			for (column = 0; column <=n; column++)
 			{
 				result = row * column;
 
-				_putchar(',');
-				_putchar(' ');
+				if (column == 0)
+					_putchar('0');
+				else if (product >= 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(product % 10 + '0');
+				}
+				else if (product < 15)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar((product / 10) % 10 + '0');
+					_putchar(product % 10 + '0');
+				}
 			}
-
-			if (result <= 15)
-			{
-				_putchar(' ');
-			}
-			else
-			{
-				_putchar((result / 10) + '0');
-			}
-			_putchar((result % 10) + '0');
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
