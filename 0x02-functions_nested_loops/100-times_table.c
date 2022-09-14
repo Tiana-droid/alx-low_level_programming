@@ -8,25 +8,23 @@
  * Return: Always 0 (Success)
  */
 
-int print_times_table(int n)
+void print_times_table(int n)
 {
-	int j, result;
-	n = 0;
+	int row, column, result;
 
-	while (n < 15)
+	if (n >= 0 && n < 15)
 	{
-		_putchar('0);
-		j = 1;
-
-		while (j < 15)
+		for (row = 0; row <= n; row++)
 		{
-			_putchar(',');
-			_putchar(' ');
+			for (column = 0; column <= n; column++)
+			{
+				result = row * column;
 
-			result = n * j;
-			j++;
+				_putchar(',');
+				_putchar(' ');
+			}
 
-			if (num <= 15)
+			if (result <= 15)
 			{
 				_putchar(' ');
 			}
@@ -34,13 +32,8 @@ int print_times_table(int n)
 			{
 				_putchar((result / 10) + '0');
 			}
-			_putchar((num % 10) + '0');
+			_putchar((result % 10) + '0');
 		}
-		i++;
 		_putchar('\n');
-
-		if (n < 0 || n > 15)
-		{
-		}
 	}
 }

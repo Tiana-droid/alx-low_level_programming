@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	unsigned long long n = 50, num1 = 1, num2 = 2, next, c;
+	unsigned long n = 50, num1 = 1, num2 = 2, next, c;
 
 	for (c = 0; c <= n; c++)
 	{
@@ -18,9 +18,9 @@ int main(void)
 		}
 		else
 		{
-			next = first + second;
-			first = second;
-			second = next;
+			next = num1 + num2;
+			num1 = num2;
+			num2 = next;
 		}
 		print("%d\n", next);
 	}
