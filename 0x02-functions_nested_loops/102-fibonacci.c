@@ -22,7 +22,7 @@ int main(void)
 			num1 = num2;
 			num2 = next;
 		}
-		print("%d\n", next);
+		printf("%d\n", next);
 	}
 	return (0);
 }
