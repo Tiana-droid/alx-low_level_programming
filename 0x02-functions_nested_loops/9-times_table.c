@@ -20,7 +20,7 @@ void times_table(void)
 			_putchar(',');
 			_putchar(' ');
 
-			num = j * i;
+			num = i * j;
 			j++;
 
 			if (num <= 9)
@@ -31,6 +31,7 @@ void times_table(void)
 			{
 				_putchar((num / 10) + '0');
 			}
+			_putchar((num % 10) + '0');
 		}
 		i++;
 		_putchar('\n');
