@@ -10,7 +10,7 @@ int main(void)
 {
 	unsigned long n = 50, num1 = 1, num2 = 2, next, c;
 
-	for (c = 0; c <= n; c++)
+	for (c = 0; c < n; c++)
 	{
 		if (c <= 1)
 		{
