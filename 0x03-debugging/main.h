@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 void positive_or_negative(int i);
-int large_num(int, int, int);
+int largest_number(int a, int b, int c);
 void print_remaining(int, int, int);
 int convert_day(int, int);
 
