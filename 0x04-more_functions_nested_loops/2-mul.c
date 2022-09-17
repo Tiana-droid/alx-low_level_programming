@@ -2,6 +2,7 @@
 
 /**
  * mul - multiply 2 integers
+ *
  * @a: int a
  * @b: int b
  *
@@ -10,9 +11,5 @@
 
 int mul(int a, int b)
 {
-	int res;
-
-	res = a * b;
-	_putchar(res);
-	return (res);
+	return (a * b);
 }
