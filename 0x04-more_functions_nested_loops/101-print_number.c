@@ -11,10 +11,12 @@
 int  power(int base, int exp)
 {
 	int i, num;
+
 	num = 1;
+
 	for (i = 0; i < exp; ++i)
-	num *= base;
-	
+		num *= base;
+
 	return (num);
 }
 
@@ -65,7 +67,5 @@ void print_number(int n)
 		}
 	}
 	if (digit == 0 && divisor == 1)
-	{
 		_putchar(48);
-	}
 }
