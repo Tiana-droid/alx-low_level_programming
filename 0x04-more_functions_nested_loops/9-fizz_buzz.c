@@ -12,16 +12,21 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0)
+		if (i % 15 == 0)
 		{
-			puts("fizz ");
+			printf("FizzBuzz ");
 		}
 		else if (i % 5 == 0)
 		{
-			puts("buzz ");
+			printf("Buzz ");
+		}
+		else if (i % 3 == 0)
+		{
+			printf("Fizz ");
 		}
 		else
 			printf("%d ", i);
 	}
+	putchar(10);
 	return (0);
 }
