@@ -14,7 +14,7 @@ void more_numbers(void)
 	int repeat = 0;
 	int limit = '9';
 
-	for (line = 0; line <= 10; line++)
+	for (line = 0; line < 10; line++)
 	{
 		while (repeat < 2)
 		{
