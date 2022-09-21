@@ -5,14 +5,14 @@
  * _puts - prints a string
  * @str: string to print
  *
- * Return: 0
+ * On success: return no error
  */
 
 void _puts(char *str)
 {
 	int i = 0;
 
-	while (*(str + 1) != '\0')
+	while (*(str + 1) != '0')
 	{
 		putchar(*(str + i));
 		i++;
