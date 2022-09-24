@@ -3,22 +3,24 @@
 /**
  * leet - encodes a string into 1337
  * @s: string to encode
- * Return: address of s
+ * Return: string array
  */
 
 char *leet(char *s)
 {
-	int i, j;
-	char a[] = "aAeEoOtTlL";
-	char b[] = "4433007711";
-
-	for (i = 0; *(s + i); i++)
+	int i;
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; j <= 9; j++)
-		{
-			if (a[j] == *(s + i))
-				*(s + i) = b[j];
-		}
+		if (s[i] == 'a' || s[i] == 'A')
+			s[i] = '4';
+		if (s[i] == 'e' || s[i] == 'E')
+			s[i] = '3';
+		if (s[i] == 'o' || s[i] == 'O')
+			s[i] = '0';
+		if (s[i] == 't' || s[i] == 'T')
+			s[i] = '7';
+		if (s[i] == 'l' || s[i] == 'L')
+			s[i] = '1';
 	}
 	return (s);
 }
