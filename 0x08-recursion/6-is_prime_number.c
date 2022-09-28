@@ -8,13 +8,16 @@
 
 int is_prime_number(int n)
 {
+	int n;
+
 	for (i = 2; i <= n; i++)
 	{
 		if (n % i == n && n / n == 1)
 		{
 			return (1);
 		}
-		else if (n % i != n || n / n == 1)
+		else
 		{
-			return (0)
+			return (0);
+		}
 }	}
