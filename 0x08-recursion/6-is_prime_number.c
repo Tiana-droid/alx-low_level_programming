@@ -3,12 +3,12 @@
 /**
  * is_prime_number - prints 1 if an integer is a prime number, otherwise 0
  * @n: num
- * Return: integer
+ * Return: 1 if n is prime, otherwise 0
  */
 
 int is_prime_number(int n)
 {
-	int start = n / 2
+	int start = n / 2;
 
 	if (n <= 1)
 	{
@@ -18,7 +18,7 @@ int is_prime_number(int n)
 }
 
 /**
- * is_prime returns i if  is prime
+ * is_prime - returns 1 if  is prime
  * @n: num
  * @start: num to start checking
  *
