@@ -1,9 +1,15 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef DOG_H
+#define DOG_H
 
 #include <stdio.h>
 #include <stdlib.h>
 int _putchar(char c);
+/**
+ * struct dog - best friend oh humankind
+ * @name: doggo's name
+ * @age: doggo's age
+ * @owner: owner's name
+ */
 typedef struct dog
 {
 	char *name;
